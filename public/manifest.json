@@ -10,7 +10,7 @@
     },
     "permissions":["activeTab"],
     "background":{
-        "scripts":["app/background.js","webRequest",
-        "*://developer.mozilla.org/"]
+        "scripts":["app/background.js","webRequest","webRequestBlocking",
+        "*://www.ubreakifix.com/"]
     }
 }
