@@ -3,13 +3,13 @@
 body{
     background-color:#021D24 ;
     text-align: center;
-    margin: 0px;
+    margin: auto;
     
 }
 .modal-header{
     color: white;
     font-size: 10px;
-    margin: 0px;
+    margin: auto;
 }
 .modal-content p{
     font-family: 'Anton', sans-serif; ;
@@ -84,7 +84,7 @@ div.toggle-btn{
     color:yellow;
     font-size: 10px;
     position: relative;
-    margin: 0px;
+    margin: auto;
     
 
 }
