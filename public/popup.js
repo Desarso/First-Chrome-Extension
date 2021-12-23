@@ -13,3 +13,10 @@ a.addEventListener('change',function(){
     }
 })
 console.log(a.checked)
+
+
+chrome.webRequest.onBeforeRequest.addListener(
+    function(details) { return {cancel: true}; },
+    {urls: ["*://www.evil.com/*"]},
+    ["blocking"]
+  );
