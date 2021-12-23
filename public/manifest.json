@@ -8,12 +8,10 @@
         "default_icon":"icon.png",
         "default_popup":"popup.html"
     },
-    "permissions":["activeTab"],
-    "background":{
-        "scripts":["app/background.js",
-            "webRequest",
-            "webRequestBlocking",
-        "*://www.ubreakifix.com/"
-    ]
-    }
+    "permissions":["activeTab",
+             "webRequest",
+             "webRequestBlocking",
+         "*://www.ubreakifix.com/"]
+    
+    
 }
