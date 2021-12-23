@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@100&display=swap');
-
+html{
+    /* border:1px solid red; */
+    width: 400px;
+}
+*{
+  /* border:1px solid red;   */
+}
 body{
     background-color:#021D24 ;
     text-align: center;
     margin: auto;
+    width: 400px;
     
 }
 .modal-header{
@@ -18,10 +25,10 @@ body{
     margin-right: 0px;
     padding-right: 0px;
     padding-bottom:0;
-    color: #848482;
+    color: #ff953e;
     margin: 0px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-bottom: 50px;
+    margin-top: 70px;
 } 
 
 .modal-content .second-line{
@@ -31,16 +38,19 @@ body{
     padding-top: 0;
     position: relative;
     left: 0px;
-    color: #848482;
+    color: #ff953e
+
 }
 
 div.toggle-btn{
-    
+    /* border:1px solid red; */
     position: relative;
     top:50% ;
     left: 47%;
+    width: 50px;
     transform:translate(-50%,-50); 
-    margin:0px;
+    margin-right: 0px;
+    padding-right: 0px;
     top: 0px;
 
 }
@@ -54,6 +64,7 @@ div.toggle-btn{
    border-radius: 30px;
    transition:all 330sms linear ;
    border-color: whitesmoke;
+   /* border:1px solid red; */
 }
 
 .toggle-btn label:before{
@@ -66,26 +77,42 @@ div.toggle-btn{
     border-radius: 50%;
     top: 2.5px;
     left: 4px;
+    /* border:1px solid red; */
     
     transition: all 140ms linear;
 }
 
 .toggle-btn input:checked +label{
     background:#00acee ;
+    /* border:1px solid red; */
 }
 .toggle-btn input:checked + label:before{
     left:25px;
+    /* border:1px solid red; */
 }
 .toggle-btn input{
     display: none;
 }
 
 .warning{
-    color:yellow;
-    font-size: 10px;
+    color:rgb(5, 119, 79);
+    font-size: 15px;
     position: relative;
     margin: auto;
     
 
 }
 
+#randomThings div{
+    color: white;
+}
+#randomThings{
+    height: 0px;
+    margin-top: 10px;
+}
+#randomThings div{
+    position: relative;
+    height: 0px;
+    left: 2.5%;
+    color: rgb(65, 255, 65);
+}
