@@ -11,7 +11,7 @@
     "permissions":["activeTab",
              "webRequest",
              "webRequestBlocking",
-         "*://www.ubreakifix.com/"]
+         "https://portal.ubif.net/api/workorders*"]
     
     
 }
