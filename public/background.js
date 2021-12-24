@@ -3,9 +3,20 @@ chrome.webRequest.onBeforeRequest.addListener(
     {urls: ["*://portal.ubif.net/api/workorders*"]},
     ["blocking"]
   );
-
-chrome.runtime.onMessage.addlistener(
-  function(request,sender,sendResponse){
-    console.log(request)
+extensionStatus={status:"off"}
+chrome.runtime.onMessage.addListener(
+  function(msg,sender,sendResponse){
+    if (msg.status != "?"){ 
+    console.log(msg);
+    extensionStatus=msg
+    // console.log(sender);
+    sendResponse(extensionStatus)
+  }else {
+    console.log(extensionStatus)
+    sendResponse(extensionStatus)
   }
-)
+
+})
+
+
+  
