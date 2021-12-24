@@ -3,3 +3,9 @@ chrome.webRequest.onBeforeRequest.addListener(
     {urls: ["*://portal.ubif.net/api/workorders*"]},
     ["blocking"]
   );
+
+chrome.runtime.onMessage.addlistener(
+  function(request,sender,sendResponse){
+    console.log(request)
+  }
+)
