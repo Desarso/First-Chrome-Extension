@@ -3,7 +3,14 @@
 
 chrome.runtime.onMessage.addListener((msg ,sender, response)=>{
     console.log(msg);
-    if (msg == "on"){
+    console.log(response);
+    // check every 100ms
+    
+})
+
+chrome.runtime.sendMessage({status: "?"},function(response){
+    console.log(response)
+    if (response.status == "on"){
         var existCondition = setInterval(function() {
             if (document.querySelector('#toast-container')) {
                console.log("Exists!");
@@ -13,6 +20,6 @@ chrome.runtime.onMessage.addListener((msg ,sender, response)=>{
                
             //    doTheRestOfTheStuff(parameters);
             }
-           }, 100); // check every 100ms
+           }, 100);
     }
-})
+  })

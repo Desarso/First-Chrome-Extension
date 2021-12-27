@@ -4,12 +4,6 @@ a.addEventListener('change',function(){
       if (document.querySelector('#randomThings').childElementCount == 0) return
         a = document.querySelector('#randomThings');
         a.children[0].remove();
-
-        
-        chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
-            chrome.tabs.sendMessage(tabs[0].id,{message:"off"})
-          });
-       
        chrome.runtime.sendMessage({status:"off"},function(response){
          console.log(response)
        })     
@@ -20,9 +14,6 @@ a.addEventListener('change',function(){
     randomThing.innerText= "Portal Light Active"
     holder=document.querySelector('#randomThings')
     holder.appendChild(randomThing)
-    chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
-        chrome.tabs.sendMessage(tabs[0].id,{message:"on"})
-      });
       chrome.runtime.sendMessage({status:"on"},function(response){
         console.log(response)
       })  
